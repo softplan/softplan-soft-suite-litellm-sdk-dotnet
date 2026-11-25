@@ -12,7 +12,7 @@ env:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   CONFIGURATION: Release
-  SOLUTION: Loud.Technology.LiteLLM.Sdk.slnx
+  SOLUTION: Softplan.Soft.Suite.LiteLLM.Sdk.slnx
 
 jobs:
   test:

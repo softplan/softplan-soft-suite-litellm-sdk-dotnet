@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Softplan.Soft.Suite.LiteLLM.Sdk.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class NewMCPServerRequestTransportNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransport?>
+    {
+        /// <inheritdoc />
+        public override global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransport? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransportExtensions.ToEnum(stringValue);
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransport)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransport?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransport? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Softplan.Soft.Suite.LiteLLM.Sdk.NewMCPServerRequestTransportExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

@@ -19,8 +19,8 @@ env:
   DOTNET_NOLOGO: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   CONFIGURATION: Release
-  SOLUTION: Loud.Technology.LiteLLM.Sdk.slnx
-  PROJECT: src/libs/LiteLLM/Loud.Technology.LiteLLM.Sdk.csproj
+  SOLUTION: Softplan.Soft.Suite.LiteLLM.Sdk.slnx
+  PROJECT: src/libs/LiteLLM/Softplan.Soft.Suite.LiteLLM.Sdk.csproj
 
 jobs:
   build-test-pack:
@@ -80,7 +80,7 @@ jobs:
           name: nuget-packages
           path: artifacts
 
-      - name: Configure loud-technology GitHub Packages source
+      - name: Configure Softplan GitHub Packages source
         shell: bash
         env:
           GITHUB_PACKAGES_TOKEN: ${{ github.token }}

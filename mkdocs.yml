@@ -1,10 +1,10 @@
 site_name: LiteLLM .NET SDK
-site_description: Strongly typed .NET SDK for the LiteLLM AI Gateway, maintained by loud-technology.
-site_url: https://loud-technology.github.io/loud-technology-litellm-sdk/
-repo_url: https://github.com/loud-technology/loud-technology-litellm-sdk
-repo_name: loud-technology/loud-technology-litellm-sdk
+site_description: Strongly typed .NET SDK for the LiteLLM AI Gateway, maintained by Softplan.
+site_url: https://softplan.github.io/softplan-soft-suite-litellm-sdk-dotnet/
+repo_url: https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet
+repo_name: softplan/softplan-soft-suite-litellm-sdk-dotnet
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; loud-technology. Released under the MIT License.
+copyright: Copyright &copy; Softplan. Released under the MIT License.
 
 nav:
   - Overview: index.md
@@ -53,7 +53,7 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/loud-technology/loud-technology-litellm-sdk
+      link: https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet
       name: LiteLLM .NET SDK on GitHub
     - icon: fontawesome/solid/cube
       link: https://www.nuget.org/packages/LiteLLM/

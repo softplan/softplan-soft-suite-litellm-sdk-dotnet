@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
-namespace Loud.Technology.LiteLLM.Sdk.IntegrationTests;
+namespace Softplan.Soft.Suite.LiteLLM.Sdk.IntegrationTests;
 
 [TestClass]
 public sealed class ClientTests

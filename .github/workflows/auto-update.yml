@@ -30,10 +30,10 @@ jobs:
         run: ./generate.sh
 
       - name: Build generated SDK
-        run: dotnet build Loud.Technology.LiteLLM.Sdk.slnx --configuration Release
+        run: dotnet build Softplan.Soft.Suite.LiteLLM.Sdk.slnx --configuration Release
 
       - name: Run tests
-        run: dotnet test Loud.Technology.LiteLLM.Sdk.slnx --configuration Release --no-build --logger GitHubActions
+        run: dotnet test Softplan.Soft.Suite.LiteLLM.Sdk.slnx --configuration Release --no-build --logger GitHubActions
 
       - name: Open update pull request
         uses: peter-evans/create-pull-request@v8

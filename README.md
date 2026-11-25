@@ -5,8 +5,8 @@
   <p>Build provider-independent AI products on LiteLLM with generated C# models, async APIs, source-generated JSON serialization, and an SDK that tracks the upstream OpenAPI surface.</p>
 
   [![NuGet](https://img.shields.io/nuget/vpre/LiteLLM?logo=nuget&label=NuGet.org)](https://www.nuget.org/packages/LiteLLM/)
-  [![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-NuGet-181717?logo=github)](https://github.com/orgs/loud-technology/packages?repo_name=loud-technology-litellm-sdk)
-  [![CI](https://github.com/loud-technology/loud-technology-litellm-sdk/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/loud-technology/loud-technology-litellm-sdk/actions/workflows/dotnet.yml)
+  [![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-NuGet-181717?logo=github)](https://github.com/orgs/softplan/packages?repo_name=softplan-soft-suite-litellm-sdk-dotnet)
+  [![CI](https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet/actions/workflows/dotnet.yml)
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![.NET 10](https://img.shields.io/badge/.NET-10.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 </div>
@@ -25,7 +25,7 @@ LiteLLM turns OpenAI, Anthropic, Azure OpenAI, Amazon Bedrock, Google Gemini, Ve
 - **Release-ready packages** — MinVer derives package versions from Git tags, Source Link connects packages to source, and symbol packages improve debugging.
 
 > [!NOTE]
-> This community SDK is maintained by loud-technology and generated from the LiteLLM OpenAPI specification. It is not an official BerriAI/LiteLLM SDK.
+> This community SDK is maintained by Softplan and generated from the LiteLLM OpenAPI specification. It is not an official BerriAI/LiteLLM SDK.
 
 ## Requirements
 
@@ -47,7 +47,7 @@ dotnet add package LiteLLM
 
 ### GitHub Packages
 
-The same package is also published to the [loud-technology GitHub Packages registry](https://github.com/orgs/loud-technology/packages?repo_name=loud-technology-litellm-sdk). GitHub requires authentication to download NuGet packages.
+The same package is also published to the [Softplan GitHub Packages registry](https://github.com/orgs/softplan/packages?repo_name=softplan-soft-suite-litellm-sdk-dotnet). GitHub requires authentication to download NuGet packages.
 
 Create a [personal access token (classic)](https://github.com/settings/tokens) with the `read:packages` scope, then register the source once:
 
@@ -59,14 +59,14 @@ dotnet nuget add source \
   --username "$GITHUB_PACKAGES_USER" \
   --password "$GITHUB_PACKAGES_TOKEN" \
   --store-password-in-clear-text \
-  --name loud-technology \
-  "https://nuget.pkg.github.com/loud-technology/index.json"
+  --name softplan \
+  "https://nuget.pkg.github.com/softplan/index.json"
 
 dotnet add package LiteLLM \
-  --source "https://nuget.pkg.github.com/loud-technology/index.json"
+  --source "https://nuget.pkg.github.com/softplan/index.json"
 ```
 
-Use a token limited to `read:packages`, never commit it, and authorize it for the organization if loud-technology enforces SAML SSO. On macOS and Linux, keep the user-level NuGet configuration private because authenticated sources require `--store-password-in-clear-text`.
+Use a token limited to `read:packages`, never commit it, and authorize it for the organization if Softplan enforces SAML SSO. On macOS and Linux, keep the user-level NuGet configuration private because authenticated sources require `--store-password-in-clear-text`.
 
 ## Quick start
 
@@ -192,10 +192,10 @@ cd src/libs/LiteLLM
 The script downloads the Swagger document linked by LiteLLM's official **All Endpoints (Swagger)** documentation, replaces `Generated/`, and creates a .NET 10 client with Bearer authentication and a local proxy base URL.
 
 ```text
-Loud.Technology.LiteLLM.Sdk.slnx
+Softplan.Soft.Suite.LiteLLM.Sdk.slnx
 ├── src/
 │   ├── libs/LiteLLM/
-│   │   ├── Loud.Technology.LiteLLM.Sdk.csproj
+│   │   ├── Softplan.Soft.Suite.LiteLLM.Sdk.csproj
 │   │   ├── openapi.yaml
 │   │   ├── generate.sh
 │   │   └── Generated/
@@ -231,9 +231,9 @@ The preview runs at `http://127.0.0.1:8123`. Renders are written to `artifacts/d
 Run the full deterministic documentation audit separately with `./scripts/validate-docs.sh`.
 
 ```bash
-dotnet restore Loud.Technology.LiteLLM.Sdk.slnx
-dotnet build Loud.Technology.LiteLLM.Sdk.slnx --configuration Release --no-restore
-dotnet test Loud.Technology.LiteLLM.Sdk.slnx --configuration Release --no-build
+dotnet restore Softplan.Soft.Suite.LiteLLM.Sdk.slnx
+dotnet build Softplan.Soft.Suite.LiteLLM.Sdk.slnx --configuration Release --no-restore
+dotnet test Softplan.Soft.Suite.LiteLLM.Sdk.slnx --configuration Release --no-build
 ```
 
 Network-free contract tests verify the base URL, Bearer header, chat route, and serialized request body. The live example runs only when `LITELLM_API_KEY` is available; otherwise MSTest marks it inconclusive.
@@ -247,7 +247,7 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-The CI workflow restores, builds, tests, and packs in `Release`. Version tags publish the same `.nupkg` to both NuGet.org and the loud-technology GitHub Packages registry. GitHub Packages uses the workflow `GITHUB_TOKEN`; NuGet.org uses Trusted Publishing to exchange a GitHub OIDC token for a short-lived API key, so no permanent package credential is stored. See [Release publishing](docs/guides/release-publishing.md) for the required NuGet.org policy and `NUGET_USER` variable. Untagged builds are retained as artifacts and are not published.
+The CI workflow restores, builds, tests, and packs in `Release`. Version tags publish the same `.nupkg` to both NuGet.org and the Softplan GitHub Packages registry. GitHub Packages uses the workflow `GITHUB_TOKEN`; NuGet.org uses Trusted Publishing to exchange a GitHub OIDC token for a short-lived API key, so no permanent package credential is stored. See [Release publishing](docs/guides/release-publishing.md) for the required NuGet.org policy and `NUGET_USER` variable. Untagged builds are retained as artifacts and are not published.
 
 ## Contributing
 
@@ -260,8 +260,8 @@ Generated files are intentionally committed so package builds are deterministic 
 
 ## Security and support
 
-- Report SDK bugs through [GitHub Issues](https://github.com/loud-technology/loud-technology-litellm-sdk/issues).
-- Ask design and usage questions in [GitHub Discussions](https://github.com/loud-technology/loud-technology-litellm-sdk/discussions).
+- Report SDK bugs through [GitHub Issues](https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet/issues).
+- Ask design and usage questions in [GitHub Discussions](https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet/discussions).
 - For LiteLLM gateway behavior, providers, deployment, or configuration, use the [official LiteLLM documentation](https://docs.litellm.ai/).
 - Do not disclose credentials or production gateway URLs in public issues.
 

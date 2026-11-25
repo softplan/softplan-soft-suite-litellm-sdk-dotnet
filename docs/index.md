@@ -14,7 +14,7 @@ hide:
       <p class="ib-hero__lede" data-reveal>Call 100+ AI providers through a generated, strongly typed client built for modern .NET.</p>
       <div class="ib-actions" data-reveal>
         <a class="ib-button ib-button--primary" href="getting-started/">Install SDK <span aria-hidden="true">→</span></a>
-        <a class="ib-button ib-button--secondary" href="https://github.com/loud-technology/loud-technology-litellm-sdk">View source <span aria-hidden="true">↗</span></a>
+        <a class="ib-button ib-button--secondary" href="https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet">View source <span aria-hidden="true">↗</span></a>
       </div>
     </div>
 
@@ -134,7 +134,7 @@ Console.WriteLine(result);</code></pre>
     </div>
     <div class="ib-actions">
       <a class="ib-button ib-button--light" href="getting-started/">Install SDK <span aria-hidden="true">→</span></a>
-      <a class="ib-button ib-button--outline" href="https://github.com/loud-technology/loud-technology-litellm-sdk">View source <span aria-hidden="true">↗</span></a>
+      <a class="ib-button ib-button--outline" href="https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet">View source <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 </div>

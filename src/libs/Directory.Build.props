@@ -12,8 +12,8 @@
   <PropertyGroup Label="NuGet">
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Authors>loud-technology and contributors</Authors>
-    <Copyright>Copyright © 2026 loud-technology</Copyright>
+    <Authors>Softplan and contributors</Authors>
+    <Copyright>Copyright © 2026 Softplan</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>nuget-icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
