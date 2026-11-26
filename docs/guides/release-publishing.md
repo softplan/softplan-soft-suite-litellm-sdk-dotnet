@@ -5,7 +5,7 @@ Stable releases are published from semantic version tags to two independent NuGe
 | Destination | Authentication | Published artifact |
 |---|---|---|
 | [NuGet.org](https://www.nuget.org/packages/LiteLLM/) | Trusted Publishing with GitHub OIDC | `.nupkg` and its symbol package |
-| [GitHub Packages](https://github.com/orgs/loud-technology/packages?repo_name=loud-technology-litellm-sdk) | Workflow `GITHUB_TOKEN` | `.nupkg` |
+| [GitHub Packages](https://github.com/orgs/softplan/packages?repo_name=softplan-soft-suite-litellm-sdk-dotnet) | Workflow `GITHUB_TOKEN` | `.nupkg` |
 
 The build job creates one immutable package. Both publishing jobs download that same workflow artifact, so the package contents and version are identical across registries.
 
@@ -16,8 +16,8 @@ The Trusted Publishing policy for this repository has already been created. In [
 | Policy field | Value |
 |---|---|
 | Policy owner | The NuGet.org user or organization that owns `LiteLLM` |
-| Repository Owner | `loud-technology` |
-| Repository | `loud-technology-litellm-sdk` |
+| Repository Owner | `softplan` |
+| Repository | `softplan-soft-suite-litellm-sdk-dotnet` |
 | Workflow File | `dotnet.yml` |
 | Environment | `nuget-org` |
 

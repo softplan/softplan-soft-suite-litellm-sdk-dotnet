@@ -24,7 +24,7 @@ Your gateway configuration determines which model names and aliases the applicat
 
 === "GitHub Packages"
 
-    Create a [personal access token (classic)](https://github.com/settings/tokens) with `read:packages`, then register the loud-technology source:
+    Create a [personal access token (classic)](https://github.com/settings/tokens) with `read:packages`, then register the Softplan source:
 
     ```bash
     export GITHUB_PACKAGES_USER="your-github-username"
@@ -34,11 +34,11 @@ Your gateway configuration determines which model names and aliases the applicat
       --username "$GITHUB_PACKAGES_USER" \
       --password "$GITHUB_PACKAGES_TOKEN" \
       --store-password-in-clear-text \
-      --name loud-technology \
-      "https://nuget.pkg.github.com/loud-technology/index.json"
+      --name softplan \
+      "https://nuget.pkg.github.com/softplan/index.json"
 
     dotnet add package LiteLLM \
-      --source "https://nuget.pkg.github.com/loud-technology/index.json"
+      --source "https://nuget.pkg.github.com/softplan/index.json"
     ```
 
 Both registries receive the same package built by the release workflow. The current SDK targets .NET 10.

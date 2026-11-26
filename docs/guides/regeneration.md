@@ -46,11 +46,11 @@ Generated changes can be large. Review them by behavior rather than file count:
 Run the same Release sequence used by CI:
 
 ```bash
-dotnet restore Loud.Technology.LiteLLM.Sdk.slnx
-dotnet build Loud.Technology.LiteLLM.Sdk.slnx \
+dotnet restore Softplan.Soft.Suite.LiteLLM.Sdk.slnx
+dotnet build Softplan.Soft.Suite.LiteLLM.Sdk.slnx \
   --configuration Release \
   --no-restore
-dotnet test Loud.Technology.LiteLLM.Sdk.slnx \
+dotnet test Softplan.Soft.Suite.LiteLLM.Sdk.slnx \
   --configuration Release \
   --no-build
 ```
@@ -60,10 +60,10 @@ Network-free contract tests verify the base URL, Bearer header, chat route, and 
 ## Repository layout
 
 ```text
-Loud.Technology.LiteLLM.Sdk.slnx
+Softplan.Soft.Suite.LiteLLM.Sdk.slnx
 ├── src/
 │   ├── libs/LiteLLM/
-│   │   ├── Loud.Technology.LiteLLM.Sdk.csproj
+│   │   ├── Softplan.Soft.Suite.LiteLLM.Sdk.csproj
 │   │   ├── openapi.yaml
 │   │   ├── generate.sh
 │   │   └── Generated/

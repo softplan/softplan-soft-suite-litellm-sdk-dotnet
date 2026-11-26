@@ -1,4 +1,4 @@
-namespace Loud.Technology.LiteLLM.Sdk.IntegrationTests;
+namespace Softplan.Soft.Suite.LiteLLM.Sdk.IntegrationTests;
 
 [TestClass]
 public partial class Tests

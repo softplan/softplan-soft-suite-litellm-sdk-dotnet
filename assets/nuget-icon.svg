@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
-  <title id="title">loud-technology</title>
-  <description id="description">A minimal audio waveform symbol for loud-technology.</description>
+  <title id="title">Softplan</title>
+  <description id="description">A minimal audio waveform symbol for Softplan.</description>
   <defs>
     <linearGradient id="brand" x1="56" y1="256" x2="456" y2="256" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#7C3AED" />

@@ -1,4 +1,4 @@
-namespace Loud.Technology.LiteLLM.Sdk;
+namespace Softplan.Soft.Suite.LiteLLM.Sdk;
 
 public sealed partial class TypeSafeQuestion
 {

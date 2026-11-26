@@ -7,7 +7,7 @@ Send a chat completion through your LiteLLM AI Gateway.
 */
 
 // ReSharper disable once CheckNamespace
-namespace Loud.Technology.LiteLLM.Sdk.IntegrationTests;
+namespace Softplan.Soft.Suite.LiteLLM.Sdk.IntegrationTests;
 
 public partial class Tests
 {

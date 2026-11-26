@@ -16,7 +16,7 @@ python3 apply-openapi-overrides.py openapi.yaml
 rm -rf Generated
 
 autosdk generate openapi.yaml \
-  --namespace Loud.Technology.LiteLLM.Sdk \
+  --namespace Softplan.Soft.Suite.LiteLLM.Sdk \
   --clientClassName LiteLLMClient \
   --targetFramework net10.0 \
   --output Generated \
