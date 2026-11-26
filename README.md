@@ -4,7 +4,7 @@
   <p><strong>One gateway. 100+ AI providers. A native, strongly typed .NET experience.</strong></p>
   <p>Build provider-independent AI products on LiteLLM with generated C# models, async APIs, source-generated JSON serialization, and an SDK that tracks the upstream OpenAPI surface.</p>
 
-  [![NuGet](https://img.shields.io/nuget/vpre/LiteLLM?logo=nuget&label=NuGet.org)](https://www.nuget.org/packages/LiteLLM/)
+  [![NuGet](https://img.shields.io/nuget/vpre/Softplan.SoftSuite.LiteLLM?logo=nuget&label=NuGet.org)](https://www.nuget.org/packages/Softplan.SoftSuite.LiteLLM/)
   [![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-NuGet-181717?logo=github)](https://github.com/orgs/softplan/packages?repo_name=softplan-soft-suite-litellm-sdk-dotnet)
   [![CI](https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet/actions/workflows/dotnet.yml)
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -42,7 +42,7 @@ LiteLLM listens on `http://localhost:4000` by default.
 Install directly from the public NuGet.org registry:
 
 ```bash
-dotnet add package LiteLLM
+dotnet add package Softplan.SoftSuite.LiteLLM
 ```
 
 ### GitHub Packages
@@ -62,7 +62,7 @@ dotnet nuget add source \
   --name softplan \
   "https://nuget.pkg.github.com/softplan/index.json"
 
-dotnet add package LiteLLM \
+dotnet add package Softplan.SoftSuite.LiteLLM \
   --source "https://nuget.pkg.github.com/softplan/index.json"
 ```
 

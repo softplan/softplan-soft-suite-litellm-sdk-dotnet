@@ -56,7 +56,7 @@ extra:
       link: https://github.com/softplan/softplan-soft-suite-litellm-sdk-dotnet
       name: LiteLLM .NET SDK on GitHub
     - icon: fontawesome/solid/cube
-      link: https://www.nuget.org/packages/LiteLLM/
+      link: https://www.nuget.org/packages/Softplan.SoftSuite.LiteLLM/
       name: LiteLLM package on NuGet.org
 
 plugins:
