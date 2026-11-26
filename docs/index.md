@@ -34,8 +34,8 @@ hide:
         <div><span>STRONGLY TYPED</span><strong>C# CLIENT</strong></div>
       </div>
       <div class="ib-install">
-        <code>dotnet add package LiteLLM</code>
-        <button type="button" data-copy="dotnet add package LiteLLM" aria-label="Copy install command">COPY</button>
+        <code>dotnet add package Softplan.SoftSuite.LiteLLM</code>
+        <button type="button" data-copy="dotnet add package Softplan.SoftSuite.LiteLLM" aria-label="Copy install command">COPY</button>
       </div>
     </figure>
   </section>

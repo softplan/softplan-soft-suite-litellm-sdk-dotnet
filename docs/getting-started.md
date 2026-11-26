@@ -19,7 +19,7 @@ Your gateway configuration determines which model names and aliases the applicat
     Install from the public registry without adding a custom source:
 
     ```bash
-    dotnet add package LiteLLM
+    dotnet add package Softplan.SoftSuite.LiteLLM
     ```
 
 === "GitHub Packages"
@@ -37,7 +37,7 @@ Your gateway configuration determines which model names and aliases the applicat
       --name softplan \
       "https://nuget.pkg.github.com/softplan/index.json"
 
-    dotnet add package LiteLLM \
+    dotnet add package Softplan.SoftSuite.LiteLLM \
       --source "https://nuget.pkg.github.com/softplan/index.json"
     ```
 
